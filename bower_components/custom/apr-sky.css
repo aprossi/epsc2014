@@ -1,0 +1,266 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+/**
+ * Sky theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+.reveal a:not(.image) {
+  line-height: 1.3em; }
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+.logo-right {z-index:1;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         10px 10px 10px 10px #ccc;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+            }
+
+.ees-logo {z-index:1;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+            }
+
+.logo-left {z-index:1;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+            }
+
+.shadowed {
+-webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+filter: url(shadow.svg#drop-shadow);
+-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12,
+Color='#444')";
+filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+.slides .header{
+  position:absolute;
+  top: -50%;
+  left: -50%;
+}
+
+.slides .footer{
+  position:absolute;
+  bottom: 50%;
+  left: 8%;
+  font-size:12pt;
+  text-align:center;
+  z-index:7000;
+  background-color: rgba(255,255,255,0.4);
+  padding:2px;
+}       
+
+.slides .footercredit{
+  position:absolute;
+  bottom: 50%;
+  right: 10%;
+  font-size:12pt;
+  text-align:center;
+  z-index:7000;
+  background-color: rgba(255,255,255,0.4);
+  padding:2px;
+}
+
+ .slides .lefthalf{
+   position: absolute;
+   float: left;
+   width: 50%;
+   vertical-align:middle;
+   background-color: rgba(255,255,255,0.4);
+   z-index: 10;
+   padding:2px;
+}
+
+
+html.intro body {
+	background:url("slides/images/iani.jpg");
+	background-position:center;
+	background-size: 100%;
+	z-index:0;
+}
+
+html.intro h1, h2, h3, p {
+	background-color: rgba(255,255,255,0.4);
+}
+
+/*********************************************
+* ORIGINAL BODY
+
+body {
+  background: #add9e4;
+  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #add9e4));
+  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background-color: #f7fbfc; }
+ *********************************************/
+
+body {
+  background: #add9e4;
+  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #FFFFCC 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #FFFFCC));
+  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #FFFFCC 100%);
+  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #FFFFCC 100%);
+  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #FFFFCC 100%);
+  background: radial-gradient(center, circle cover, #f7fbfc 0%, #FFFFCC 100%);
+  background-color: #f7fbfc; }
+
+.reveal {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  color: #333333; }
+
+::selection {
+  color: white;
+  background: #134674;
+  text-shadow: none; }
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+.reveal h1,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #333333;
+  /***
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  **/
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  line-height: 0.9em;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  text-shadow: none;
+  text-align:center;}
+
+ .reveal h2 {
+  margin: 0 0 20px 0;
+  color: #333333;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  line-height: 0.9em;
+  letter-spacing: -0.08em;
+  text-shadow: none;
+  text-align:left;
+  padding:10px;}
+
+
+.reveal h1 {
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal a:not(.image) {
+  color: #3b759e;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+
+.reveal a:not(.image):hover {
+  color: #74a7cb;
+  text-shadow: none;
+  border: none; }
+
+.reveal .roll span:after {
+  color: #fff;
+  background: #264c66; }
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; }
+
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #3b759e;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+/*********************************************
+ * DIVS
+ *********************************************/
+ .div.floats div {
+   margin: 20px;
+   padding: 20px;
+   float: left;
+   z-index: 10;}
+
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left,
+.reveal .controls div.navigate-left.enabled {
+  border-right-color: #3b759e; }
+
+.reveal .controls div.navigate-right,
+.reveal .controls div.navigate-right.enabled {
+  border-left-color: #3b759e; }
+
+.reveal .controls div.navigate-up,
+.reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #3b759e; }
+
+.reveal .controls div.navigate-down,
+.reveal .controls div.navigate-down.enabled {
+  border-top-color: #3b759e; }
+
+.reveal .controls div.navigate-left.enabled:hover {
+  border-right-color: #74a7cb; }
+
+.reveal .controls div.navigate-right.enabled:hover {
+  border-left-color: #74a7cb; }
+
+.reveal .controls div.navigate-up.enabled:hover {
+  border-bottom-color: #74a7cb; }
+
+.reveal .controls div.navigate-down.enabled:hover {
+  border-top-color: #74a7cb; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2); }
+
+.reveal .progress span {
+  background: #3b759e;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -ms-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -o-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * SLIDE NUMBER
+ *********************************************/
+.reveal .slide-number {
+  color: #3b759e; }

@@ -1,0 +1,36 @@
+[
+    
+    "index.md",
+    
+    "outline.md",
+
+    [
+    "10_motivation.md",
+    "11_objectives.md"
+    ],
+
+    [
+    "20_intro.md",
+
+    "21_planetary-gis.md",
+
+    "22_vo.md"
+    ],
+    
+    [
+    "30_vespa.md",
+
+    "32_vespa-objectives.md",
+
+    "35_ogc_standards.md",
+
+    "38_existing-tools.md"
+	],
+
+    "40_europlanet-context.md",
+
+    "50_outlook.md",
+    
+    "last.md"
+    
+]

@@ -1,0 +1,10 @@
+/*********************************************
+ * IMAGES IN A 2 x 2 grid
+ *********************************************/
+
+#container-index { position: relative; }
+#sotto, #sopra { position: absolute; left: 50px; }
+
+/* sopra will be on top of sotto */
+#sotto { z-index: 1; }
+#sopra { z-index: 2; }

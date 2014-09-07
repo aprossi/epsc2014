@@ -1,50 +1,276 @@
-<!DOCTYPE html>
-<html>
+`<!doctype html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Epsc2014 : ">
+    <head>
+        <meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <title>Planetary GIS & VO</title>
 
-    <title>Epsc2014</title>
-  </head>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-  <body>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/aprossi/epsc2014">View on GitHub</a>
-
-          <h1 id="project_title">Epsc2014</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/aprossi/epsc2014/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/aprossi/epsc2014/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="epsc2014" class="anchor" href="#epsc2014"><span class="octicon octicon-link"></span></a>epsc2014</h1>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Epsc2014 maintained by <a href="https://github.com/aprossi">aprossi</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
+        <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
     
+        <link rel="stylesheet" href="bower_components/custom/apr-sky.css" id="theme">
+        
+        <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.min.css">
+        
+        <!-- For lightbox -->
+        <link href="bower_components/lightbox/css/lightbox.css" rel="stylesheet" />
 
-  </body>
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'bower_components/reveal.js/css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+    	<!-- LOGOS -->
+        <a href="http://www.jacobs-university.de/planets">
+    	<div id="logo-right" style="background: url(slides/logos/ees-50px.svg);
+                        position: absolute;
+                        bottom: 50px;
+                        right: 150px;
+                        width: 50px;
+                        height: 50px;
+                        z-index: 9999;">
+        </div>
+        </a>
+
+        <a href="http://www.jacobs-university.de">
+    	<div id="logo-left" style="background: url(slides/logos/jacobs-50px.svg);
+                        position: absolute;
+                        bottom: 50px;
+                        left: 150px;
+                        width: 50px;
+                        height: 50px;
+                        z-index: 9000;">
+         </div>
+        </a>
+<!--
+        <div id="logo-center" style="background: url(slides/logos/aprossi-logo_v3.svg);
+                        position: absolute;
+                        bottom: 50px;
+                        left: 50%;
+                        width: 85;
+                        height: 50px;
+                        z-index: 8000;">
+         </div>
+-->
+        <a href="http://www.epsc2014.eu">
+        <div id="meeting-logo" style="background: url(slides/logos/europlanet-logo-2.svg);
+                        position: absolute;
+                        top: 50px;
+                        left: 150px;
+                        width: 220px;
+                        height: 50px;
+                        z-index: 8000;">
+        </div>
+        </a>
+
+		<a href="http://www.obspm.fr">
+        <div id="logo-right-center" style="background: url(slides/logos/logo-obspm.svg);
+                        position: absolute;
+                        bottom: 50px;
+                        right: 58%;
+                        width: 120px;
+                        height: 50px;
+                        z-index: 9999;">
+         </div>
+         </a>
+
+		<a href="http://geops.geol.u-psud.fr">
+        <div id="logo-left-center" style="background: url(slides/logos/logo-geops.svg);
+                        position: absolute;
+                        bottom: 50px;
+                        left: 58%;
+                        width: 90px;
+                        height: 50px;
+                        z-index: 9000;">
+         </div>
+         </a>
+
+        <div class="reveal">
+
+<header style="position: absolute;top: 100px; left: 150px; z-index:500; font-size:30px;background-color: font-family: "Quicksand", sans-serif; margin: 0 0 20px 0; color: #333333; font-family: "Quicksand", sans-serif; line-height: 0.9em; letter-spacing: -0.08em; text-transform: uppercase; text-shadow: none; z-index:500; rgba(255,255,255,0.2)"></header>
+
+            <div class="slides">
+
+                
+                    
+                        
+    <section data-markdown="slides/index.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/outline.md"></section>
+
+
+                    
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-markdown="slides/10_motivation.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/11_objectives.md"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-markdown="slides/20_intro.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/21_planetary-gis.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/22_vo.md"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-markdown="slides/30_vespa.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/32_vespa-objectives.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/35_ogc_standards.md"></section>
+
+
+                            
+                                
+    <section data-markdown="slides/38_existing-tools.md"></section>
+
+
+                            
+                        </section>
+                    
+                
+                    
+                        
+    <section data-markdown="slides/40_europlanet-context.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/50_outlook.md"></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="slides/last.md"></section>
+
+
+                    
+                    
+                
+
+                <!-- FOOTER -->
+                <div class="footer">
+                    <div class="small">
+                        Content ©2014 <a href="http://aprossi.eu">A. P. Rossi et al.</a> - <a href="https://twitter.com/arosp">@arosp</a> - <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA</a>
+                    </div>
+                </div>  
+                  
+            </div>
+
+        </div>
+
+        <script src="bower_components/holder.js/holder.js"></script>
+
+        <script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+        <script src="bower_components/reveal.js/js/reveal.min.js"></script>
+        <script>
+            // Configure Reveal
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                slideNumber: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+                ]
+            });
+        </script>
+
+        <!-- For lightbox -->
+        <script src="bower_components/lightbox/js/jquery-1.11.0.min.js"></script>
+        <script src="bower_components/lightbox/js/lightbox.min.js"></script>
+
+    </body>
+
 </html>
